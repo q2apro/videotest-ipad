@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>iPad Video PHP Streaming Test</title>
+</head>
+<body>
+
+	<p style="font-weight:bold;">All 3 video files are streamed by the script test-byterange-2.php (<a href="test-byterange-2.txt">source here</a>)</p>
+	
+	<p>1. First encoded video (streamed file: <a href="video.mp4">video.mp4</a>)</p>
+	<p>not working on iPad - Note: video has been treated with <a href="http://www.datagoround.com/lab/" rel="nofollow">MP4 Fast Start</a> </p>
+	<video controls>
+		<source src="test-byterange-2.php" type="video/mp4">
+	</video>
+
+	<p>2. Handbrake encoded video, profile "iPad" with 640x480 (streamed file: <a href="test-ipad-480p.mp4">test-ipad-480p.mp4</a>)</p>
+	<p>working on iPad</p>
+	<video controls>
+		<source src="test-byterange-2a.php" type="video/mp4">
+	</video>
+
+	<p>3. Handbrake encoded video, profile "normal" with 640x480 (streamed file: <a href="test-normal-480p.mp4">test-normal-480p.mp4</a>)</p>
+	<p>working on iPad</p>
+	<video controls>
+		<source src="test-byterange-2b.php" type="video/mp4">
+	</video>
+
+
+	<style type="text/css">
+		body {
+			font-family:Arial;
+		}
+		video {
+			margin-bottom:50px;
+		}
+	</style>
+</body>
+</html>

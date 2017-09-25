@@ -1,0 +1,6 @@
+AddType video/mp4 .mp4 
+
+# for ipad, iphone, set by PHP script
+#<IfModule mod_headers.c>
+#   Header set Accept-Ranges "bytes"
+#</IfModule>
